@@ -1,28 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minium-scale=1.0, maximun-scale=1.0">
+    <meta name="author" content="Quinto Elemento">
+    <meta name="keywords" content="centro medico, salud, centro de salud">
+    <meta name="description" content="Aplicación web del centro médico Quinto Elemento para creación y administración de pacientes">
+    <link rel="icon" type="image/jpg" href="imagenes/favicon-16x16.png"/>
     <title>CM Quinto Elemento</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
 
-    
-</head>
-<body>
-    
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body>
+    <img src="imagenes/banner.jpg" alt="bannerquintoelemento" title="Banner Centro Médico Quinto Elemento"  />
+    <h2>Creación de usuarios:</h2>
+    <p>
+      <form>
+            <!-- Creación de usuarios -->
+            <p>
+              <fieldset style="width: 940px;">
+              <br/>
+              <legend> Datos Personales</legend>
+              <br/>
+
+              <!-- Clase de usuarios -->
+              <label for="cargo">Selecciona tipo de usuario:</label>
+              <select name="cargo" id="cargo">
+                  <option value="0"> Elige:</option>
+                  <option value="1"> Recepción</option>
+                  <option value="2"> Médico</option>
+
+              </select>
+              <br/> <br/><br/>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <!-- <script src="./assets/js/main.js"></script> esto es como se venia haciendo pero
-    el profe lo cambio en la clase anterior-->
-    <script src="./index.js"></script>
+              <label for="camponombre">Nombres:</label>
+              <input type="text" name="nombre" id="camponombre" placeholder="Primer y Segundo Nombre" required style="width: 300px;" autofocus required>
 
-</body>
+&nbsp; &nbsp; &nbsp;&nbsp;
+
+              <label for="campoapellido">Apellidos:</label>
+              <input type="text" name="apellido" id="campoapellido" placeholder="Primer y Segundo Apellido" required style="width: 300px;" required>
+            </p>
+
+
+          <br/>
+
+            <!-- Selección tipo de identificación -->
+
+            <label>Tipo de identificación:</label>
+                    <select>
+                      <option>Cédula (CC)</option>
+                      <option>Cédula de estranjería (CE)</option>
+                    </select>
+
+            <!-- Número de identificación -->
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+              <label for="numeroid">Número de identificación: </label>
+              <input type="number" name="numeroid" id="numeroid" placeholder="Número de identificación" required style="width: 200px;" required>
+
+
+        <br/> <br/>
+
+              <!-- Fecha de nacimiento-->
+            <p>
+            <label for="nacimientous">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="nacimientous">
+            </p>
+
+      <br/>
+
+            <!-- Correo electrónico-->
+
+
+        <label for="emailus">Correo electrónico:</label>
+        <input type="email" name="email" id="emailus" placeholder="email@dominio.com" autofocus required style="width: 300px;" required>
+
+      <br/>      <br/>
+
+            <!-- Dirección de Usuario-->
+      <label for="direccionus">Dirección:</label>
+      <input type="text" name="direccion" id="direccionus" placeholder="Dirección" required style="width: 350px;" required>
+
+
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+
+            <!-- Celular de Usuario-->
+
+      <label for="celularus">Número de celular:</label>
+      <input type="tel" name="celular" id="celularus" placeholder="Celular" required style="width: 250px;" required>
+
+<p><br/>
+<hr>
+</p>
+
+
+            <!-- Asignación de usuario y contraseña-->
+
+<p><h2>Asignación usuario y contraseña:</h2></p>
+
+
+<label for="asigus">Usuario:</label>
+<input type="text" name="usuario" id="asigus" placeholder="Nuevo nombre de usuario" required style="width: 350px;" required>
+
+
+            <!-- Asignación de  contraseña -->
+
+                  <br/> <br/><p>
+                    <label for="passwordus">Contraseña:</label>
+                    <input type="password" name="psw" id="passwordus" placeholder="Nueva contraseña" required>
+                  </p>
+<br/>
+
+          <!-- Botón para grabar info -->
+                  <p>
+                    <input type="submit" value="Crear usuario">
+                    <input type="reset" value="Borrar">
+                  </p>
+
+
+</form>
+
+    </p>
+  </body>
 </html>
+
