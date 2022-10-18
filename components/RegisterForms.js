@@ -15,7 +15,7 @@ const RegisterForm = () => {
             <!-- Clase de usuarios -->
             <label for="cargo">Selecciona tipo de usuario:</label>
             <select name="cargo" id="cargo">
-                <option value="0"> Elige:</option>
+                <option value="0"> Seleccione:</option>
                 <option value="1"> Recepción</option>
                 <option value="2"> Médico</option>
 

@@ -1,0 +1,33 @@
+img{
+    width:100%
+  }
+  
+  p{font-family: sans-serif;}
+  h2{font-family: sans-serif;}
+  h5{font-family: sans-serif;}
+  
+  body{
+    margin:auto;
+  }
+  
+  @media all and (min-width:421px) and (max-width:768px){
+    img{
+      width: 80%;
+    }
+  
+  }
+  
+.login{
+
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.crearUsuario{
+
+    display: flex;
+    justify-content: center;
+
+}
